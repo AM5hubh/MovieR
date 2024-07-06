@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <div className='shadow-2xl bg-zinc-900 shadow-zinc-900 p-4 w-full text-white flex justify-center items-center rounded-b-3xl '>
             <div className='w-full max-w-[1700px] flex items-center justify-between'>
-                <Link to="/">
+                <Link to="/MovieR/">
                     <p className="text-2xl font-bold flex items-center"><span className='font-black text-3xl text-red-600'>Movie</span>R<img src="https://the3dmarket.com/cdn/shop/products/new_red_cyan_blue_1024x1024.png?v=1571438517" className='w-[100px] ' /></p>
                 </Link>
                 <div className='relative items-center hidden sm:block'>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <button type='submit' className="p-3 hover:text-red-500 absolute rounded-full top-50% -right-0 cursor-pointer" onClick={handleKeyPress}><IoIosSearch /></button> 
                 </div>
                 <div className='p-1 rounded-3xl'>
-                    <Link to="/Genre">
+                    <Link to="/MovieR/Genre">
                         <button className="p-2 font-small hover:text-red-500 text-white text-2xl">Genre</button>
                     </Link>
                     
