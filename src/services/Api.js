@@ -1,7 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 
 
-const page = 1;
 
 
 export const TMDBAPI = createApi({
