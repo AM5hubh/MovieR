@@ -6,6 +6,12 @@ import { useGetMovQuery } from '../../services/Api';
 
 
 function Modal({ data, modalActive, modalClose }) {
+    // for (let i = 0; i < data?.videos?.results?.length; i++) {
+    //     if(data?.videos?.results[15].name == "OFFICIAL"){
+    //         const x = data.videos.results[i].key;
+    //     }
+        
+    // }
     if (!modalActive) return null;
     return (
         <div
@@ -110,6 +116,7 @@ const MovieInformation = () => {
                     </button>
                     <button onClick={()=>{setModalActive(true)}} className="my-2 p-2 mx-3 rounded-2xl border hover:border-red-500 hover:text-red-500">Trailer</button>
                     <Modal data={data} modalActive={modalActive} modalClose={() => setModalActive(false)} />
+                    {/* <p></p> */}
                 </div>
             </div>
         </section>
