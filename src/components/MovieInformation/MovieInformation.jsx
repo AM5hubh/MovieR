@@ -40,7 +40,7 @@ const MovieInformation = () => {
     const { id } = useParams();
 
     const { data, isFetching, error } = useGetMovQuery(id);
-    console.log(data)
+    // console.log(data)
     return (
         <section className='w-full flex flex-col justify-center lg:flex-row'>
             <div className="p-5 mt-5 flex justify-center items-start lg:w-[45%]">
